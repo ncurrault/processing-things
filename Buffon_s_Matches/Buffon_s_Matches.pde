@@ -9,7 +9,7 @@ int totalMatches = 0;
 int matchesOnLine = 0;
 
 PVector getPoint(PVector origin, float angle, int distance) {
-  PVector a = PVector.random2D();
+  PVector a = PVector.fromAngle(angle);
   a.mult(distance);
   PVector v = origin.get();
   v.add(a);
